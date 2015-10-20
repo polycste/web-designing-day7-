@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    border: 1px solid black;
+    width: 200px;
+    height: 100px;
+    overflow: scroll;
+}
+</style>
+</head>
+<body>
+
+<p>Try the scrollbar in div.</p>
+
+<div onscroll="myFunction()">scroll...scroll..scroll...scrollll..scroll..scroll.scroll.scroll..scrollll..scroll...scroll..scroll...scroll...scrolll</div>
+
+<p>Scrolled <span id="demo">01</span> times.</p>
+
+<script>
+var x = 0;
+function myFunction() {
+    document.getElementById("demo").innerHTML = x += 1;
+}
+</script>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>my profile</title>
+<link href="bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+
+</style>
+<script>
+
+function myFunction() {
+    document.body.style.backgroundColor = "pink";
+}
+
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
+
+function double() {
+    document.getElementById("demo").innerHTML = "Hello World";
+}
+
+function mouseDown() {
+    document.getElementById("myP").style.color = "red";
+}
+
+function mouseUp() {
+    document.getElementById("myP").style.color = "green";
+}
+
+var images=["poly.jpg","p.jpg","o.jpg","l.jpg","y.jpg"];
+var img_len=images.length;
+var index=1;
+console.log(index);
+function image(){
+var image=document.getElementById("changeit");
+
+if(index!=img_len){
+image.src=images[index];
+console.log(images[index]);
+index++;
+}
+}
+
+
+function mouseOverme(){
+document.getElementById("sample").style.color = "blue";
+}
+
+function mouseOut(){
+document.getElementById("sample").style.color = "red";
+}
+
+</script>
+</head>
+<body>
+
+<div id="container">
+
+
+<div id="row">
+
+  <ul class="nav nav-pills">
+<div class="col-md-3" style="background-color:green;height:70px;font-size:50px;font-style=italic;"><a href="profile.html">Profile</a></div>
+<div class="col-md-3" style="background-color:green;height:0px;font-size:50px;font-style:italic;"><a href="portfolio.html">Portfolio</a></div>
+<div class="col-md-3"style="background-color:green;height:70px;font-size:50px;font-style:italic;"><a href="contact.html">Contact</a></div>
+<div class="col-md-3"style="background-color:green;height:70px;font-size:50px;font-style:italic;"><a href="about html">About Us</a></div>
+  </ul>
+</div>
+<div id="row"  >
+<div class="col-md-3"style="background-color:blue;height:600;"">
+<img src="poly.jpg" id="changeit" width="300" height="300">
+<button class="btn-btn-default" onClick="image()">previous</button>
+<button class="btn-btn-default" onClick="image()">next</button>
+
+<div class="row">
+<br>
+  <a href="profile.html" style="background-color:#FF00FF;color:white;font-size:20px;">Profile</a>
+</div>
+
+<div class="row">
+  <a href="portfolio.html" style="background-color:#FF007F;color:white;font-size:20px;">Portfolio</a>
+</div>
+<div class="row">
+  <a href="contact.html" style="background-color:#FF00FF;color:white;font-size:20px;">contact</a>
+</div>
+<div class="row">
+  <a href="about.html" style="background-color:#FF00FF;color:white;font-size:20px;">About</a>
+
+</div>
+&nbsp;
+</div>
+<div class="col-md-6" style="background-color:#9933FF;height:600;">
+
+
+   <div id="row" ><br>
+   <div class="col-md-6"style="background-color:#003366;height:200;">
+     <h2>project1:<h2>
+   </div>
+   
+   <div class="col-md-6"style="background-color:#003333;height:200;">
+    <h2>project2:</h2>
+    
+   </div>
+</div>
+&nbsp;
+</div>
+
+<div class="col-md-3" style="background-color:#CC99FF;height:600">
+<div id="row"><h3 align="center">All events</h3>
+
+<br>
+<button type="button" onclick="myFunction()">Set background color</button>
+</div>
+<div id="row"><br><br>
+<button type="button"
+onclick="displayDate()">
+Click me to display Date and Time.</button>
+<p id="demo"></p>
+</div>
+<div id="row">
+<p ondblclick="double()">Double-click that add another text</p>
+<p id="demo"></p>
+</div>
+<div id="row">
+<p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+mousedown..mouseup..mousedown..mouseup..mousedown..mouseup..
+</p>
+
+</div>
+
+
+
+</div>
+<div id="row">
+<div class="col-md-12"style="background-color:#6600CC;height:200;">contact to us: <a href="gmail">polycste@gmail.com</a><br></div>
+</div>
+
+
+</div>
+
+
+
+</div>
+</body>
+</html>
